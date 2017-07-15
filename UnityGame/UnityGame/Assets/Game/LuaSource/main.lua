@@ -14,7 +14,7 @@ function Main()
 	local panel = UIPackage.CreateObject(packageName, componentName)
 	local btn = panel:GetChild("Btn")
 	btn.onClick:Add(function()
-		print("----------------------------------------------------")
+		print("-----------------------------------------------------")
 	end)
 	print("btn", btn)
 
