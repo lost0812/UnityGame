@@ -27,11 +27,9 @@ RPGGame/RPGGame/*.sav
 UnityGame/UnityGame/Temp/*
 UnityGame/UnityGame/Library/metadata*
 UnityGame/UnityGame/Library/ShaderCache/*
-UnityGame/UnityGame/Assets/FairyGUI/*
-UnityGame/UnityGame/Assets/Resources/FairyGUI/*
-UnityGame/UnityGame/Assets/Script/FairyGUI/*
-UnityGame/UnityGame/Assets/StreamingAssets/*
-UnityGame/UnityGame/Assets/*.meta
-
-UnityGame/UnityGame/Assets/3rdParty/Tolua/Source/Generate/UnityEngine*
-UnityGame/UnityGame/Assets/3rdParty/Tolua/Source/Generate/FairyGUI*
+UnityGame/Assets/FairyGUI/*
+UnityGame/Assets/Resources/FairyGUI/*
+UnityGame/Assets/Script/FairyGUI/*
+UnityGame/Assets/StreamingAssets/*
+UnityGame/Assets/*.meta
+UnityGame/Assets/Game/Resources/FairyGUI/*

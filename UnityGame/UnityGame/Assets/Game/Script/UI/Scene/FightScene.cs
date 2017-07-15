@@ -173,6 +173,7 @@ public class FightScene : MonoBehaviour
             if (g_SequenceSlot[i].numChildren <= 1)
             {
                 g_SequenceSlot[i].AddChild(btnSequence);
+                g_Sequence.Add(btnSequence);
                 break;
             }
         }
@@ -228,7 +229,7 @@ public class FightScene : MonoBehaviour
 
         for (int i = 0; i < RoleData.MAX_SEQUENCE_NUM; ++i)
         {
-            DataMgr.Instance.Enemy().ActionSequence[i] = Random.Range(0, 3);
+            DataMgr.Instance.Enemy().ActionSequence.Add(Random.Range(0, 3));
         }
         
         UIMgr.Instance.ShowFightActionScene();
