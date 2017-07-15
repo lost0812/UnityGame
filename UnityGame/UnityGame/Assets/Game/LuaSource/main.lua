@@ -9,6 +9,10 @@ function Main()
 	GUIMgr:OpenPage("pagestarttest")
 end
 
+function Update(deltaTime)
+	GUIMgr:Update(deltaTime)
+end
+
 --场景切换通知
 function OnLevelWasLoaded(level)
 
