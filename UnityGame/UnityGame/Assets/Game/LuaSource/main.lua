@@ -9,7 +9,7 @@ function Main()
 	GUIMgr:OpenPage("pagestarttest")
 end
 
-function Update(deltaTime)
+function GameUpdate(deltaTime)
 	GUIMgr:Update(deltaTime)
 end
 
