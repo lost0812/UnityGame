@@ -1,5 +1,11 @@
 
 
+local SortOrder = 
+{
+	"common" = 1,
+	"alert" = 2,
+}
+
 local UIPage = Class(function(self)
 	self.window = nil
 	self.panel = nil
