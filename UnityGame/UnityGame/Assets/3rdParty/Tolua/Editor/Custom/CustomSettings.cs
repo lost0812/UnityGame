@@ -142,7 +142,10 @@ public static class CustomSettings
         _GT(typeof(FairyGUI.Relations)),
         _GT(typeof(FairyGUI.RelationType)),
         _GT(typeof(FairyGUI.Timers)),
-          
+
+        //Game
+        _GT(typeof(RPGGame.UIWindow)),
+
     };
 
     public static List<Type> dynamicList = new List<Type>()

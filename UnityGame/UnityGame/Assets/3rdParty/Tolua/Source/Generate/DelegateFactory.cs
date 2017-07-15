@@ -34,6 +34,7 @@ public static class DelegateFactory
 		dict.Add(typeof(FairyGUI.UIPackage.CreateObjectCallback), FairyGUI_UIPackage_CreateObjectCallback);
 		dict.Add(typeof(FairyGUI.GObjectPool.InitCallbackDelegate), FairyGUI_GObjectPool_InitCallbackDelegate);
 		dict.Add(typeof(FairyGUI.TimerCallback), FairyGUI_TimerCallback);
+		dict.Add(typeof(RPGGame.UIWindow.UIWindowCallBack), RPGGame_UIWindow_UIWindowCallBack);
 	}
 
     [NoToLuaAttribute]
@@ -488,6 +489,28 @@ public static class DelegateFactory
 		}
 
 		FairyGUI.TimerCallback d = (new FairyGUI_TimerCallback_Event(func)).Call;
+		return d;
+	}
+
+	class RPGGame_UIWindow_UIWindowCallBack_Event : LuaDelegate
+	{
+		public RPGGame_UIWindow_UIWindowCallBack_Event(LuaFunction func) : base(func) { }
+
+		public void Call()
+		{
+			func.Call();
+		}
+	}
+
+	public static Delegate RPGGame_UIWindow_UIWindowCallBack(LuaFunction func)
+	{
+		if (func == null)
+		{
+			RPGGame.UIWindow.UIWindowCallBack fn = delegate { };
+			return fn;
+		}
+
+		RPGGame.UIWindow.UIWindowCallBack d = (new RPGGame_UIWindow_UIWindowCallBack_Event(func)).Call;
 		return d;
 	}
 
