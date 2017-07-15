@@ -16,6 +16,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-
+        LuaClient.Instance.OnGameUpdate(0.01f);
     }
 }
