@@ -22,11 +22,21 @@ function UIManager:OpenPage(name)
 	local page = self.pages[name]
 	if page then
 		page:OnCreate()
+		page.window:Show()
+	end
+end
+
+function UIManager:ClosePage(name)
+	local page = self.pages[name]
+	if page then
+		page.window:Hide()
 	end
 end
 
 function UIManager:Update(deltaTime)
-
+	for _,v in pairs(self.pages) do
+		v:Update(deltaTime)
+	end
 end
 
 return UIManager()
