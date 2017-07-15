@@ -2,8 +2,8 @@
 
 local SortOrder = 
 {
-	["common"] = 1,
-	["alert"] = 2,
+	"common" = 1,
+	"alert" = 2,
 }
 
 local UIPage = Class(function(self)
