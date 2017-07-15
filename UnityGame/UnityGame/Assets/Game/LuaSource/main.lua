@@ -1,27 +1,26 @@
 --主入口函数。从这里开始lua逻辑
 
 require("fairygui")
+require("globalmodule")
 
 function Main()					
 	print("lua start!")
-	local UIPackage = FairyGUI.UIPackage
-	local GRoot = FairyGUI.GRoot
-	local packageName = "Start"
-	local componentName = "PageStart"
-	UIPackage.AddPackage("UIProject/"..packageName)
-	--适配
-	GRoot.inst:SetContentScaleFactor(1366, 768)
-	local panel = UIPackage.CreateObject(packageName, componentName)
-	local btn = panel:GetChild("Btn")
-	btn.onClick:Add(function()
-		print("-----------------------------------------------------")
-	end)
-	print("btn", btn)
+	GUIMgr:Initialize()
+	GActorMgr:Initialize()
+	GUIMgr:OpenPage("pagestarttest")
+end
 
-	local uiWindow = FairyGUI.Window.New()
-	uiWindow.contentPane = panel
-	--show
-	uiWindow:Show()
+function GameUpdate(deltaTime)
+	GUIMgr:Update(deltaTime)
+	GActorMgr:Update(deltaTime)
+end
+
+function GameQuit()
+
+end
+
+function FocusChange()
+
 end
 
 --场景切换通知

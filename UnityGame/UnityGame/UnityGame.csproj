@@ -123,6 +123,7 @@
     <Compile Include="Assets\3rdParty\Tolua\Source\Generate\FairyGUI_UIPackageWrap.cs" />
     <Compile Include="Assets\3rdParty\Tolua\Source\Generate\FairyGUI_WindowWrap.cs" />
     <Compile Include="Assets\3rdParty\Tolua\Source\Generate\LuaBinder.cs" />
+    <Compile Include="Assets\3rdParty\Tolua\Source\Generate\RPGGame_UIWindowWrap.cs" />
     <Compile Include="Assets\3rdParty\Tolua\Source\Generate\UnityEngine_AnimationBlendModeWrap.cs" />
     <Compile Include="Assets\3rdParty\Tolua\Source\Generate\UnityEngine_AnimationClipWrap.cs" />
     <Compile Include="Assets\3rdParty\Tolua\Source\Generate\UnityEngine_AnimationStateWrap.cs" />
@@ -211,10 +212,13 @@
     <Compile Include="Assets\3rdParty\Tolua\ToLua\Misc\LuaLooper.cs" />
     <Compile Include="Assets\3rdParty\Tolua\ToLua\Misc\LuaResLoader.cs" />
     <Compile Include="Assets\Game\Script\Data\DataMgr.cs" />
+    <Compile Include="Assets\Game\Script\GameManager.cs" />
+    <Compile Include="Assets\Game\Script\StartHelper.cs" />
     <Compile Include="Assets\Game\Script\UI\Scene\FightActionScene.cs" />
     <Compile Include="Assets\Game\Script\UI\Scene\FightScene.cs" />
     <Compile Include="Assets\Game\Script\UI\Scene\MainScene.cs" />
     <Compile Include="Assets\Game\Script\UI\UIMgr.cs" />
+    <Compile Include="Assets\Game\Script\UI\UIWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3rdParty\FairyGUI\Resources\Shaders\AddOn\FairyGUI-BlurFilter.shader" />

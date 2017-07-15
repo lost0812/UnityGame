@@ -103,6 +103,9 @@ public static class LuaBinder
 		L.RegFunction("TransitionHook", FairyGUI_TransitionHook);
 		L.RegFunction("TimerCallback", FairyGUI_TimerCallback);
 		L.EndModule();
+		L.BeginModule("RPGGame");
+		RPGGame_UIWindowWrap.Register(L);
+		L.EndModule();
 		L.BeginModule("System");
 		L.RegFunction("Action", System_Action);
 		L.EndModule();

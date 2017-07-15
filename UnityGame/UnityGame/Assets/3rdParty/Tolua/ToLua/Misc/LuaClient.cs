@@ -36,6 +36,7 @@ public class LuaClient : MonoBehaviour
     protected LuaState luaState = null;
     protected LuaLooper loop = null;
     protected LuaFunction levelLoaded = null;
+    protected LuaFunction gameUpdate = null;
 
     protected bool openLuaSocket = false;
     protected bool beZbStart = false;
@@ -110,6 +111,7 @@ public class LuaClient : MonoBehaviour
     {
         luaState.DoFile("main.lua");
         levelLoaded = luaState.GetFunction("OnLevelWasLoaded");
+        gameUpdate = luaState.GetFunction("GameUpdate");
         CallMain();
     }
 
@@ -159,15 +161,32 @@ public class LuaClient : MonoBehaviour
         }
     }
 
+    public void OnGameUpdate(float deltaTime)
+    {
+        if (gameUpdate != null)
+        {
+            gameUpdate.BeginPCall();
+            gameUpdate.Push(deltaTime);
+            gameUpdate.PCall();
+            gameUpdate.EndPCall();
+        }
+    }
+
+    void DestroyFunc(LuaFunction func)
+    {
+        if (func != null)
+        {
+            func.Dispose();
+            func = null;
+        }
+    }
+
     protected void Destroy()
     {
         if (luaState != null)
         {
-            if (levelLoaded != null)
-            {
-                levelLoaded.Dispose();
-                levelLoaded = null;
-            }
+            DestroyFunc(levelLoaded);
+            DestroyFunc(gameUpdate);
 
             if (loop != null)
             {
@@ -180,6 +199,7 @@ public class LuaClient : MonoBehaviour
                 luaState.Dispose();
                 luaState = null;
             }
+
             
             Instance = null;
         }
