@@ -2,8 +2,8 @@
 
 local SortOrder = 
 {
-	"common" = 1,
-	"alert" = 2,
+	["common"] = 1,
+	["alert"] = 2,
 }
 
 local UIPage = Class(function(self)
@@ -27,7 +27,7 @@ function UIPage:InitWindow(packageName, componentName)
 	uiWindow.WindowName = componentName
 	self.window = uiWindow
 	self.panel = panel
-	--self.window.onInit = 
+	--self.window.onInit = function  end
 	--show
 	--uiWindow:Show()
 end
