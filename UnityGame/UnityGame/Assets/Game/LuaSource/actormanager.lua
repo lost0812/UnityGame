@@ -10,4 +10,12 @@ function ActorManager:AddActor(actor)
 	table.insert(self.actors, actor)
 end
 
+function ActorManager:Update(deltaTime)
+
+end
+
+function ActorManager:Initialize()
+	
+end
+
 return ActorManager
