@@ -22,15 +22,15 @@ namespace RPGGame
             }
         }
 
-        protected virtual void OnHide()
+        override protected void OnHide()
         {
             onHide();
         }
-        protected virtual void OnInit()
+        override protected void OnInit()
         {
             onInit();
         }
-        protected virtual void OnShown()
+        override protected void OnShown()
         {
             onShow();
         }

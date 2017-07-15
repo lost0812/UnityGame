@@ -14,8 +14,6 @@ end)
 function UIPage:InitWindow(packageName, componentName)
 	local UIPackage = FairyGUI.UIPackage
 	local GRoot = FairyGUI.GRoot
-	--local packageName = "Start"
-	--local componentName = "PageStart"
 	UIPackage.AddPackage("UIProject/"..packageName)
 	--适配
 	GRoot.inst:SetContentScaleFactor(1366, 768)
@@ -27,7 +25,9 @@ function UIPage:InitWindow(packageName, componentName)
 	uiWindow.WindowName = componentName
 	self.window = uiWindow
 	self.panel = panel
-	--self.window.onInit = function  end
+	self.window.onInit = function() self:OnInit() end
+	self.window.onHide = function() self:OnHide() end
+	self.window.onShown = function() self:OnShown() end
 end
 
 function UIPage:OnCreate()
@@ -43,7 +43,7 @@ function UIPage:OnHide()
 end
 
 function UIPage:OnInit()
-
+	
 end
 
 function UIPage:Update(deltaTie)
