@@ -28,8 +28,6 @@ function UIPage:InitWindow(packageName, componentName)
 	self.window = uiWindow
 	self.panel = panel
 	--self.window.onInit = function  end
-	--show
-	--uiWindow:Show()
 end
 
 function UIPage:OnCreate()

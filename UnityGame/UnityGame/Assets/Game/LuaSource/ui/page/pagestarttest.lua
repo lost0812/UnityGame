@@ -12,7 +12,6 @@ function PageStartTest:OnCreate()
 	btn.onClick:Add(function()
 		print("Hello World")
 	end)
-	self.window:Show()
 end
 
 
