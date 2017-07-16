@@ -73,7 +73,7 @@ public class UIMgr : MonoBehaviour
 
     public void ShowFightActionScene()
     {
-        //HideAllScene();
+        HideAllScene();
         g_FightActionScene.gameObject.SetActive(true);
     }
 }
