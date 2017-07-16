@@ -1,11 +1,13 @@
 5.5.0f3:3.1.0.0
 StandaloneWindows
 F:/DevelopSoftware/Unity5.5/Editor/Data/Managed/UnityEngine.dll
+F:/DevelopSoftware/Unity5.5/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll
 F:/DevelopSoftware/Unity5.5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
 F:/DevelopSoftware/Unity5.5/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
 F:/DevelopSoftware/Unity5.5/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll
 F:/DevelopSoftware/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll
 F:/DevelopSoftware/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll
+F:/DevelopSoftware/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll
 F:/DevelopSoftware/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll
 F:/DevelopSoftware/Unity5.5/Editor/Data/Managed/UnityEditor.dll
 F:/DevelopSoftware/Unity5.5/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll
