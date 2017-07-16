@@ -1,14 +1,14 @@
-# Workspace Files 工程文件
+# Workspace Files
 RPGGame/.*
 RPGGame/RPGGame.VC.*
 XMLTools/.*
 XMLTools/XMLTools.VC.*
 
-# Compiled Temp Files 编译临时文件
+# Compiled Temp Files
 RPGGame/RPGGame/Debug/*
 XMLTools/XMLTools/Debug/*
 
-# Compiled Object Files 编译文件
+# Compiled Object Files 
 RPGGame/Debug/*.*
 XMLTools/Debug/*.*
 
@@ -23,12 +23,11 @@ RPGGame/RPGGame/proto/xls_deploy_tool.log
 RPGGame/RPGGame/*.sav
 
 
-# Unity Workspace Unity工程
+# Unity Workspace Unity
 UnityGame/UnityGame/Temp/*
 UnityGame/UnityGame/Library/*
 UnityGame/Assets/FairyGUI/*
-UnityGame/Assets/Resources/FairyGUI/*
-UnityGame/Assets/Script/FairyGUI/*
 UnityGame/Assets/StreamingAssets/*
 UnityGame/Assets/*.meta
 UnityGame/Assets/Game/Resources/FairyGUI/*
+UnityGame/UnityGame/Library/assetDatabase3
